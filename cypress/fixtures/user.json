@@ -1,0 +1,8 @@
+{
+    "to": "+917878787878",
+    "code": "112233",
+    "url" : "https://nest-gateway-develop.volary.io/apiprocess/",
+    "prod" : "https://nest-gateway.prod.volary.io/apiprocess/",
+    "sand" : "https://nest-sandbox.volary.io/apiprocess/"
+}
+
