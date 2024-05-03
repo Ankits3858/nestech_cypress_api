@@ -3,6 +3,6 @@
     "code": "112233",
     "url" : "https://nest-gateway-develop.volary.io/apiprocess/",
     "prod" : "https://nest-gateway.prod.volary.io/apiprocess/",
-    "sand" : "https://nest-sandbox.volary.io/apiprocess/"
+    "sand" : "https://nest-gateway-sandbox.volary.io/apiprocess/"
 }
 

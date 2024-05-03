@@ -6,7 +6,7 @@ beforeEach(()=>{
 
     cy.request({
         method :"POST",
-        url : user.url + "verifyOTP",
+        url : user.sand + "verifyOTP",
         body:{
             "to": user.to,
             "code": user.code
@@ -23,7 +23,7 @@ beforeEach(()=>{
 it("validate sendEmailVerificationOTP with valid token and valid mobile number",()=>{
     cy.request({
         method:"POST",
-        url:user.url+"sendEmailVerificationOTP",
+        url:user.sand+"sendEmailVerificationOTP",
         headers:{ "Authorization" : "Bearer " + token},
         body:{
             
@@ -55,7 +55,7 @@ it("validate sendEmailVerificationOTP with valid token and valid mobile number",
 it("validate sendEmailVerificationOTP with valid token and invalid mobile number",()=>{
 cy.request({
     method:"POST",
-    url:user.url+"sendEmailVerificationOTP",
+    url:user.sand+"sendEmailVerificationOTP",
     headers:{ "Authorization" : "Bearer " +token},
         body:{
             
@@ -86,7 +86,7 @@ else{
 it("validate sendEmailVerificationOTP with valid token and empty phone number",()=>{
 cy.request({
     method:"POST",
-    url:user.url+"sendEmailVerificationOTP",
+    url:user.sand+"sendEmailVerificationOTP",
     headers:{ "Authorization" : "Bearer " +token},
         body:{
             

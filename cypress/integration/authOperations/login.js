@@ -8,7 +8,7 @@ it("verify login api with valid number",()=>
 cy.request({
 method: "POST",
 //url:"https://nest-gateway-develop.volary.io/apiprocess/login",
-url : user.url + "login",
+url : user.sand + "login",
 body:{
     "to": user.to
 }
@@ -30,7 +30,7 @@ cy.log(JSON.stringify(res))
 it("verify login with invalid 9 digit phone number",()=>{
 cy.request({
     method:"POST",
-    url:user.url +"login",
+    url:user.sand +"login",
     body:{
         "to":"+91787878787"
     }
@@ -59,7 +59,7 @@ it("verify login with empty body",()=>{
     cy.request(
         {
             method:"POST",
-            url:user.url + "login",
+            url:user.sand + "login",
             body:{
 
             }
@@ -83,7 +83,7 @@ it("verify login with empty body",()=>{
        it("verify login without phone number in to attribute",()=>{
         cy.request({
             method:"POST",
-            url:user.url+"login",
+            url:user.sand+"login",
             body:{
                 "to":" "
             }

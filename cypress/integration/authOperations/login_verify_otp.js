@@ -7,7 +7,7 @@ describe("Login verification with valid otp",()=>{
     {
     cy.request({
     method: "POST",
-    url : user.url + "verifyOTP",
+    url : user.sand + "verifyOTP",
     body:{
         "to": user.to,
         "code": user.code
@@ -32,7 +32,7 @@ describe("Login verification with valid otp",()=>{
        {
         cy.request({
             method:"POST",
-            url:user.url+"verifyOTP",
+            url:user.sand+"verifyOTP",
             body:{
                 "to":"+91787878787",
                 "code":user.code
@@ -67,7 +67,7 @@ describe("Login verification with valid otp",()=>{
        {
         cy.request({
             method:"POST",
-            url:user.url+"verifyOTP",
+            url:user.sand+"verifyOTP",
             body:{
 
             }
